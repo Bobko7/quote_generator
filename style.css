@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Raleway&family=Roboto&display=swap');
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*END OF RESET*/
+body{
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    background: #fff;
+    border-radius: 7px;
+    padding-inline: 3em;
+}
+.wrapper header{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 25px 60px 10px;
+}
+.quote-field{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3.5em 1.5em;
+}
+.quote{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    word-break:normal;
+    text-align: center;
+    width: 40ch;
+    word-break: normal;
+}
+.quote-field i:last-of-type{
+    align-self: end;
+}
+.author{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.author h1{
+    font-style: italic;
+    font-size: 1em;
+}
+.author span{
+    font-family: monospace;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    margin-block: 1.5em;
+    
+}
+.footer button{
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+    border-radius: 20px;
+    padding: 15px 25px;
+    color: white;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+.footer button:hover{
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.4);
+}
+.icons, .wrapper button{
+    margin-top: 1.5em;
+}
+.icons i{
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid purple;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em;
+    color: purple;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+.icons{
+    display: flex;
+}
+.icons i:hover{
+    background: purple;
+    color: white;
+}
